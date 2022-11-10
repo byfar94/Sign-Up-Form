@@ -1,0 +1,154 @@
+:root{
+    margin: 0;
+    padding: 0;
+    --color-main: #285367;
+    --color-secondary: #e08f0c;
+    font-family: 'Kalam', cursive;
+
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.hero{
+    background-image: url("images/books.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 50%;
+    margin: 0;
+    position: relative;
+}
+
+.logo-container{
+    position: absolute;
+    background-color: rgb(0,0,0, 0.8);
+    width: 100%;
+    top: 10rem;
+    min-height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.odin{
+    max-width: 25%;
+}
+
+.logo-container p{
+    color: white;
+}
+
+.form-container{
+    background-color: #f0f0f0;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0rem 2rem;
+}
+
+.form-question-ctn{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: .5rem 1.5rem;
+}
+
+.form-question-ctn h3{
+    margin: 0rem;
+}
+
+.form-question-ctn div{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 0.2rem;
+    border: 1px black solid;
+    max-width: 75%;
+}
+
+input:focus{
+    outline: none;
+    border-color: var(--color-secondary);
+}
+
+#sub-btn{
+    margin: 0.25rem 2rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: var(--color-main);
+    color: white;
+    border-radius: 0.25rem;
+    transition: 100ms;
+    font-size: 1.10rem;
+}
+
+#sub-btn:hover{
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.login-msg-contain{
+    margin: 0rem 2rem;
+}
+
+.link{
+    color: var(--color-main);
+    text-decoration: none;
+    transition: 100ms;
+}
+
+.link:hover{
+    color: var(--color-secondary);
+}
+
+@media only screen and (max-width: 800px) { 
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-question-ctn{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: .5rem 2rem;
+    }
+
+    .logo-container{
+        position: static;
+        background-color: rgb(0,0,0, 0.8);
+        width: 100%;
+        top: 10rem;
+        min-height: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+
+}

@@ -23,6 +23,15 @@ main{
     min-height: 100vh;
 }
 
+h2{
+    font-size: 1.5rem;
+    color: white;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
 .hero{
     background-image: url("images/books.jpg");
     background-size: cover;
@@ -64,12 +73,18 @@ main{
     padding: 0rem 2rem;
 }
 
+.info p{
+    font-size: 1.35rem;
+    margin: 0.5rem;
+}
+
 .form-question-ctn{
     background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    padding: .5rem 1.5rem;
+    padding: .5rem 1rem;
+    box-shadow: 1px 1px 5px rgb(34, 34, 34);
 }
 
 .form-question-ctn h3{

@@ -84,7 +84,7 @@ h3{
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: .5rem 1rem;
-    box-shadow: 1px 1px 5px rgb(34, 34, 34);
+    box-shadow: 1px 1px 3px rgb(34, 34, 34);
 }
 
 .form-question-ctn h3{

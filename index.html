@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Press+Start+2P&display=swap" rel="stylesheet"> 
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <section class="hero">
-            <div class="logo-container">
-                <img src="images/odin-lined.png" alt="Odin Symbol" class="odin">
-                <h2>ODIN FORM</h2>
+      <section class="hero">
+        <div class="logo-container">
+          <img src="images/odin-lined.png" alt="Odin Symbol" class="odin" />
+          <h2>ODIN FORM</h2>
+        </div>
+      </section>
+      <section class="form-container">
+        <div class="info">
+          <p>
+            This is not a real online service! you know you need somehting like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started!
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <form id="form">
+          <section class="form-question-ctn">
+            <h3>Let's do this!</h3>
+            <p id="error-msg"></p>
+            <!-- figure out how to replace this and keep grid set well -->
+            <div>
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="John"
+                pattern="[a-zA-Z]+"
+              />
             </div>
-        </section>
-        <section class="form-container">
-            <div class="info">
-                <p>This is not a real online service! you know you need somehting like this in your life to help you realize your deepest dreams. Sign up now to get started!</p>
-                <p>You know you want to.</p>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Smith"
+                pattern="[a-zA-Z]+"
+              />
             </div>
-            <form>
-                <section class="form-question-ctn">
-                    <h3> Let's do this!</h3>
-                    <h3> </h3> <!-- figure out how to replace this and keep grid set well -->
-                        <div> 
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="John" pattern="[a-zA-Z]+">
-                        </div>
-                        <div> 
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Smith" pattern="[a-zA-Z]+">
-                        </div>
-                        <div> 
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your-email@email.com">
-                        </div>
-                        <div> 
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-555-5555">
-                        </div>
-                        <div> 
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-                        <div> 
-                            <label for="confirmPass">Confirm Password</label>
-                            <input type="password" id="confirmPass" name="confirmPass" onkeyup="check();">
-                            <p id="message">Pending Match</p>
-                        </div>
-                </section>
-                <div class="btn-contain">
-                    <button type="submit" id="sub-btn">Create Account</button>
-                </div>
-                <div class="login-msg-contain">
-                    <p>Already a user? <a class="link" href="singup.html">Login</a></p>
-                </div>
-            </form>
-        </section>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your-email@email.com"
+              />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                placeholder="555-555-5555"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div>
+              <label for="confirmPass">Confirm Password</label>
+              <input type="password" id="confirmPass" name="confirmPass" />
+              <p id="message">Pending Match</p>
+            </div>
+          </section>
+          <div class="btn-contain">
+            <button type="submit" id="sub-btn">Create Account</button>
+          </div>
+          <div class="login-msg-contain">
+            <p>Already a user? <a class="link" href="singup.html">Login</a></p>
+          </div>
+        </form>
+      </section>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
